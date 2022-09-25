@@ -1,0 +1,20 @@
+from scatter_letters import sl
+
+sl.text_to_gif('', 
+               out_path='output', 
+               repeat=True, 
+               intensity=40, 
+               rand=True, 
+               gif_name='yes', 
+               n_frames=32, 
+               bg_color='#f58549', 
+               marker='o', 
+               marker_color='#585123',  
+               marker_size=3, 
+               fps=24, 
+               alpha=0.8, 
+               axis_on=False, 
+               sort_coords=False, 
+               sort_coords_asc=True, 
+               in_path=None, 
+               hold_frames=20) 

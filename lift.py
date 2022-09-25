@@ -4,7 +4,6 @@
 # Find maintenance (BMR)
 # Choose bulk/cut
 # Maintenance for 2 weeks, +100/weekly for bulk, -100/weekly for cut
-
 print("-------------------------------------------------------------------------------------------------")
 print("Step 1: Find your maintenance calories!")
 print("-------------------------------------------------------------------------------------------------")
@@ -77,7 +76,7 @@ else:
     print("Cut.")
     print()
 print("-------------------------------------------------------------------------------------------------")
-print("Step 2: We made our suggestion which you should consider, but you're in control!")
+print("Step 2: We made our suggestion which you should consider, but you're in control! Choose your path!")
 print("-------------------------------------------------------------------------------------------------")
 #
 print("Definitions:")
@@ -333,12 +332,12 @@ if prog == "1":
     if level == "b":
      if d == "F": 
         if BMR == "m": # + 900
-           print("Your count for weeks 1-3 (maintenance) is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 305 + 500)))
-           print("Your count for week 4 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 455 + 500)))
-           print("Your count for week 5 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 555 + 500)))
-           print("Your count for week 6 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 655 + 500)))
-           print("Your count for week 7 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 755 + 500)))
-           print("Your count for week 8 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 855 + 500)))
+           print("Your count for weeks 1-3 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) - 161 + 900)))
+           print("Your count for week 4 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c)  - 161 + 900 + 155)))
+           print("Your count for week 5 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c)  - 161 + 900 + 255)))
+           print("Your count for week 6 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c)  - 161 + 900 + 355)))
+           print("Your count for week 7 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c)  - 161 + 900 + 455)))
+           print("Your count for week 8 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c)  - 161 + 900 + 555)))
            print()
         elif BMR == "f": # + 1100
            print("Your count for weeks 1-3 is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) - 161 + 1100)))
@@ -662,7 +661,7 @@ if prog == "2":
         #
         #
         #
-print("The ideal amount of weight to lose per week is 0.5 kgs. Do not rush.")
+    print("The ideal amount of weight to lose per week is 0.5 kgs. Do not rush.")
 if prog == "3":
    print("Are you a beginner or do you have experience in the gym? [answer with b/e]")
    level = input("Choose level: ")
@@ -755,7 +754,7 @@ if prog == "3":
        elif BMR == "f":
         print("Your maintenance is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 5 + 1100)))
        print()
-   print("A stricter diet may casue an increase in muscle which may gradually increase your weight or it may start cutting fat, which may result in loss of weight. Do not worry and do not rush.")
-else:
- print("whoops, invalid entry!")
+        print("A stricter diet may casue an increase in muscle which may gradually increase your weight or it may start cutting fat, which may result in loss of weight. Do not worry and do not rush.")
+    else:
+    print("whoops, invalid entry!")
 print()
