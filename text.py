@@ -1,11 +1,11 @@
 from scatter_letters import sl
 
-sl.text_to_gif('', 
+sl.text_to_gif('fuck', 
                out_path='output', 
                repeat=True, 
                intensity=40, 
                rand=True, 
-               gif_name='yes', 
+               gif_name='fuck', 
                n_frames=32, 
                bg_color='#f58549', 
                marker='o', 
