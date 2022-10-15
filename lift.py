@@ -754,7 +754,4 @@ if prog == "3":
        elif BMR == "f":
         print("Your maintenance is: " + str(10*int(a) + (6.25*float(b) - 5*int(c) + 5 + 1100)))
        print()
-        print("A stricter diet may casue an increase in muscle which may gradually increase your weight or it may start cutting fat, which may result in loss of weight. Do not worry and do not rush.")
-    else:
-    print("whoops, invalid entry!")
 print()
