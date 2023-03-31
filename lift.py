@@ -63,21 +63,19 @@ def fitness_program():
                 maintenance += bulk_increment
                 print(f"Your count for week {week} is: {maintenance}")
     elif prog == "2":
-        level = input("Are you a beginner or do you have experience in the gym? [answer with b/e] ")
-
-        if level not in ("b", "e"):
-            print("Whoops, invalid entry!")
-        else:
-            print("Here is your programme!")
-            base_cuts = {"A": 300}
-            additional_cuts = [0, 100, 150, 200, 250, 300, 350, 400]
-        for week, cut in enumerate(additional_cuts, start=1):
+      level = input("Are you a beginner or do you have experience in the gym? [answer with b/e] ")
+      if level not in ("b", "e"):
+        print("Whoops, invalid entry!")
+      else:
+        print("Here is your programme!")
+        base_cuts = {"A": 300, "B": 500, "C": 700, "D": 500, "E": 700, "F": 900}
+        additional_cuts = [0, 100, 150, 200, 250, 300, 350, 400]
+        for week in range(1, 9):
             if activity_level in base_cuts:
                 base = base_cuts[activity_level]
+                cut = 0 if level == "b" and week <= 3 else additional_cuts[week-1]
                 count = maintenance - base - cut
-
-                if level == "b" and week <= 3 or level == "e":
-                    print(f"Your count for week {week} is: {count}")
+                print(f"Your count for week {week} is: {count}")
             print()
     elif prog == "3":
         level = input("Are you a beginner or do you have experience in the gym? [answer with b/e] ")
@@ -87,7 +85,6 @@ def fitness_program():
           print("Here is your programme!")
         for week in range(1, 9):
             print(f"Your count for week {week} is: {maintenance}")
-            print()
     else:
       print("Wrong entry!")
 print()
